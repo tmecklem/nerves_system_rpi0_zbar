@@ -48,6 +48,7 @@ defmodule NervesSystemRpi0Zbar.MixProject do
   defp deps do
     [
       {:nerves, "~> 1.0", runtime: false},
+      {:nerves_init_gadget, ">= 0.4.1", optional: true},
       {:nerves_system_br, "1.4.5", runtime: false},
       {:nerves_toolchain_armv6_rpi_linux_gnueabi, "1.1.0", runtime: false},
       {:nerves_system_linter, "~> 0.3.0", runtime: false},

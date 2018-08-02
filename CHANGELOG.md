@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.4.1
+
+* Breaking Changes
+
+  * USB Gadget devices are no longer compiled into the Linux kernel ([#62]). This means
+    that if you depend on the `ttyGS0` serial or `usb0` Ethernet device, it now
+    needs to be configured at runtime using a new library, for example, using
+    [`nerves_init_gadget` v0.4.1] or later.
+
+[#62]: https://github.com/nerves-project/nerves_system_rpi0/pull/62
+[`nerves_init_gadget` v0.4.1]: https://github.com/nerves-project/nerves_init_gadget/releases/tag/v0.4.1
+
 ## v1.4.0
 
 This release contains various updates to provisioning variables and data.
