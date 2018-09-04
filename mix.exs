@@ -35,7 +35,7 @@ defmodule NervesSystemRpi0Zbar.MixProject do
     [
       type: :system,
       artifact_sites: [
-        {:github_releases, "gregmefford/#{@app}"}
+        {:github_releases, "tmecklem/#{@app}"}
       ],
       platform: Nerves.System.BR,
       platform_config: [
@@ -63,10 +63,10 @@ defmodule NervesSystemRpi0Zbar.MixProject do
 
   defp package do
     [
-      maintainers: ["Greg Mefford"],
+      maintainers: ["Timothy Mecklem"],
       files: package_files(),
       licenses: ["Apache 2.0"],
-      links: %{"Github" => "https://github.com/gregmefford/#{@app}"}
+      links: %{"Github" => "https://github.com/tmecklem/#{@app}"}
     ]
   end
 
